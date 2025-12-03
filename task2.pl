@@ -5,8 +5,7 @@
 % ---------------- Helpers ----------------
 
 % next/3: Wrapper para edge.
-% Usamos _Model para ignorar el nombre, asumiendo que los hechos edge/2 son globales.
-% CORRECCIÓN IMPORTANTE: Usamos edge() directo, no clause().
+% Se usa _Model para ignorar el nombre, asume que los hechos edge/2 son globales.
 next(Node, Next, _Model) :-
     edge(Node, Next).
 

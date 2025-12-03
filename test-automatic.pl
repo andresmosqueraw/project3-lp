@@ -1,6 +1,6 @@
 % ============================================================================
 % TEST SUITE AUTOMÁTICO PARA TASK 1–3
-% Usa el grafo “m” definido con node/2 y edge/2
+% Se sa el grafo “m” definido con node/2 y edge/2
 % ============================================================================
 
 % Alias del modelo (solo para cumplir la firma some/3 y always/3)
@@ -9,7 +9,7 @@ m.
 % Ejecutar todas las pruebas:
 run_tests :-
     writeln('===================================='),
-    writeln('       RUNNING AUTOMATIC TESTS'),
+    writeln('       EJECUTANDO PRUEBAS AUTOMÁTICAS'),
     writeln('===================================='), nl,
 
     test_group_some,
@@ -17,7 +17,7 @@ run_tests :-
     test_group_vacuous,
 
     writeln('===================================='),
-    writeln('        ALL TESTS COMPLETED'),
+    writeln('        TODAS LAS PRUEBAS COMPLETADAS'),
     writeln('====================================').
 
 % ============================================================================

@@ -35,6 +35,6 @@ edge(n5, n4).
 % ============================================================================
 % INSTRUCCIONES:
 % 1. Cargar archivos: ['task1.pl', 'task2.pl', 'task3.pl'].
-% 2. Carga este archivo (si no se ha definido los hechos en task1).
-%    (Si task1 ya tiene hechos, comenta los de task1 o usa este test aparte).
+% 2. Cargar este archivo (si no se han definido los hechos en task1).
+%    (Si task1 ya tiene hechos, se comenta los de task1 o usa este test aparte).
 % ============================================================================
