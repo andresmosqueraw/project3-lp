@@ -26,10 +26,25 @@ some(Pred, Node, Model) :-
     node(FutureNode, PredList),
     member(Pred, PredList).
 
-% ---------------- Examples ----------------
-% ?- some(p, a, model).
-% true.
-% ?- some(q, a, model).
-% true.
-% ?- some(p, c, model).
-% false.
+% ============================================================================
+% TESTING TASK 2 INDEPENDENTLY
+% ============================================================================
+% Dado que esta tarea depende del grafo del modelo, se debe cargar task1.pl primero.
+%
+% 1. Load files:
+%    ?- ['task1.pl', 'task2.pl'].
+%
+% 2. Example Queries:
+%
+%    ?- some(p, a, model).
+%    true.
+%    (Explanation: 'a' reaches 'b' and 'c', which contain 'p')
+%
+%    ?- some(q, a, model).
+%    true.
+%    (Explanation: 'a' reaches 'd', which contains 'q')
+%
+%    ?- some(p, c, model).
+%    false.
+%    (Explanation: 'c' is a leaf node, it has no future nodes)
+% ============================================================================

@@ -32,10 +32,26 @@ always(Pred, Node, Model) :-
                (node(N, PredList), member(Pred, PredList)))
     ).
 
-% ---------------- Examples ----------------
-% ?- always(p, a, model).
-% false.
-% ?- always(p, b, model).
-% true.
-% ?- always(p, c, model).
-% true.
+% ============================================================================
+% TESTING TASK 3 INDEPENDENTLY
+% ============================================================================
+% Dado que esta tarea depende del grafo del modelo, se debe cargar task1.pl primero.
+%
+% 1. Load files:
+%    ?- ['task1.pl', 'task3.pl'].
+%
+% 2. Example Queries:
+%
+%    ?- always(p, b, model).
+%    true.
+%    (Explanation: 'b' only goes to 'c', and 'c' has 'p')
+%
+%    ?- always(p, a, model).
+%    false.
+%    (Explanation: 'a' goes to 'd', and 'd' does NOT have 'p')
+%
+%    ?- always(ANYTHING, c, model).
+%    true.
+%    (Explanation: Vacuously true. 'c' has no future nodes, so "all futures"
+%     technically satisfy the condition)
+% ============================================================================
